@@ -20,6 +20,12 @@ public class GerenteDeFiguras {
     public void setFigura(FiguraGeometrica figura) {
         this.figura = figura;
     }
+    public Integer getTipo() {
+        return tipo;
+    }
+    public void setTipo(Integer tipo) {
+        this.tipo = tipo;
+    }
     
 
 }
