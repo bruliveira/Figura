@@ -14,7 +14,7 @@ public class Testar {
 
         Triangulo triangulo1 = new Triangulo();
         Retangulo retangulo1 = new Retangulo();
-        GerenteDeFiguras gerente = new GerenteDeFiguras();
+        
         
 
         /* --- Ler pelo teclado
@@ -38,13 +38,14 @@ public class Testar {
         System.out.println("Área do triângulo: " + triangulo1.calculaArea());
         System.out.println("Área do retângulo: " + retangulo1.calculaArea());
         
-        //Gerente -recebendo o retangulo e triangulo
-        gerente.setFigura(retangulo1);
-        gerente.setTipo(1);
-        gerente.setFigura(triangulo1);
-        gerente.setTipo(2);
+        GerenteDeFiguras gerente1 = new GerenteDeFiguras(1, triangulo1);
+        GerenteDeFiguras gerente2 = new GerenteDeFiguras(2, retangulo1);
+        gerente1.teste();
 
-        gerente.calculaAreaToral();
+        //Gerente - Calcula retangulo e triangulo
+        System.out.println("Area total - G1: " + gerente1.calculaAreaToral());
+        System.out.println("Area total - G2: " + gerente2.calculaAreaToral());
+        
 
     }
 }

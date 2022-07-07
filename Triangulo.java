@@ -5,7 +5,6 @@ public class Triangulo extends FiguraGeometrica {
     private double base;
     private double altura;
 
-    
     @Override
     //Tem polimorfismo aqui, nesta classe e na de Retangulo, ambos herdam
     //o metodo calculaArea.
