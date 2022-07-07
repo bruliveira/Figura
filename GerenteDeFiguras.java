@@ -4,21 +4,16 @@ public class GerenteDeFiguras {
     Retangulo retangulogerente = new Retangulo();
     Triangulo triangulogerente = new Triangulo();
 
-    public GerenteDeFiguras(Integer tipo, FiguraGeometrica figura){
+    /*public GerenteDeFiguras(Integer tipo, FiguraGeometrica figura){
         this.tipo = tipo;
         this.figura = figura;
-    }
+    }*/
 
     public void teste(){
         System.out.println("Veraqui: " + retangulogerente.getAltura());  
     }
-    public double calculaAreaToral(){
-        
-        if(this.tipo == 1){
-            return (retangulogerente.getBase() * retangulogerente.getAltura()/2);
-        }else{
-            return (triangulogerente.getBase()*triangulogerente.getAltura());
-        }
+    public double calculaAreaToral(FiguraGeometrica f){
+        return f.calculaArea();
     }
 
 

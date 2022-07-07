@@ -38,13 +38,13 @@ public class Testar {
         System.out.println("Área do triângulo: " + triangulo1.calculaArea());
         System.out.println("Área do retângulo: " + retangulo1.calculaArea());
         
-        GerenteDeFiguras gerente1 = new GerenteDeFiguras(1, triangulo1);
-        GerenteDeFiguras gerente2 = new GerenteDeFiguras(2, retangulo1);
-        gerente1.teste();
+        GerenteDeFiguras gerente1 = new GerenteDeFiguras();
+        GerenteDeFiguras gerente2 = new GerenteDeFiguras();
+        gerente1.calculaAreaToral(triangulo1);
 
         //Gerente - Calcula retangulo e triangulo
-        System.out.println("Area total - G1: " + gerente1.calculaAreaToral());
-        System.out.println("Area total - G2: " + gerente2.calculaAreaToral());
+        System.out.println("Area total - G1: " + gerente1.calculaAreaToral(triangulo1 ));
+        //System.out.println("Area total - G2: " + gerente2.calculaAreaToral());
         
 
     }
