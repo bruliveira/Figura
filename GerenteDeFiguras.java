@@ -4,10 +4,6 @@ public class GerenteDeFiguras {
     Retangulo retangulogerente = new Retangulo();
     Triangulo triangulogerente = new Triangulo();
 
-    /*public GerenteDeFiguras(Integer tipo, FiguraGeometrica figura){
-        this.tipo = tipo;
-        this.figura = figura;
-    }*/
 
     public void teste(){
         System.out.println("Veraqui: " + retangulogerente.getAltura());  
