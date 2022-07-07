@@ -2,6 +2,10 @@ public class GerenteDeFiguras {
     private int tipo; // 1 -Triangulo, 2 - retangulo
     private FiguraGeometrica figura;
 
+    public GerenteDeFiguras(Integer tipo, FiguraGeometrica figura){
+        this.tipo = tipo;
+        this.figura = figura;
+    }
 
     public double calculaAreaToral(){
         Retangulo retangulogerente = new Retangulo();

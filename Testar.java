@@ -40,8 +40,9 @@ public class Testar {
         
         //Gerente -recebendo o retangulo e triangulo
         gerente.setFigura(retangulo1);
-        gerente.
+        gerente.setTipo(1);
         gerente.setFigura(triangulo1);
+        gerente.setTipo(2);
 
         gerente.calculaAreaToral();
 
