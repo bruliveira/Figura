@@ -41,10 +41,11 @@ public class Testar {
         GerenteDeFiguras gerente1 = new GerenteDeFiguras();
         GerenteDeFiguras gerente2 = new GerenteDeFiguras();
         gerente1.calculaAreaToral(triangulo1);
+        gerente1.calculaAreaToral(retangulo1);
 
         //Gerente - Calcula retangulo e triangulo
         System.out.println("Area total - G1: " + gerente1.calculaAreaToral(triangulo1 ));
-        //System.out.println("Area total - G2: " + gerente2.calculaAreaToral());
+        System.out.println("Area total - G2: " + gerente2.calculaAreaToral(retangulo1));
         
 
     }
