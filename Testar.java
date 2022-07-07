@@ -42,5 +42,7 @@ public class Testar {
         gerente.setFigura(retangulo1);
         gerente.setFigura(triangulo1);
 
+        gerente.calculaAreaToral()
+
     }
 }

@@ -4,7 +4,13 @@ public class GerenteDeFiguras {
 
 
     public double calculaAreaToral(){
-        return 0;
+        Retangulo retangulogerente = new Retangulo();
+        Triangulo triangulogerente = new Triangulo();
+        if(this.tipo == 1){
+            return (retangulogerente.getBase()*retangulogerente.getAltura())/2;
+        }else{
+            return (triangulogerente.getBase()*triangulogerente.getAltura());
+        }
     }
 
 
